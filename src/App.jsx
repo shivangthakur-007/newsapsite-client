@@ -14,11 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/read" element={<Readnews />}></Route>
-        <Route
-          path={'/read/:useparam'}
-          element={<Category />}
-        ></Route>
+        <Route path={"/read/:useparam"} element={<Category />}></Route>
       </Routes>
+      <Route path="*" element={<NotFound />}></Route>
     </QueryClientProvider>
   );
 }
