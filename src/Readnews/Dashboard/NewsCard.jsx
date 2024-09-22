@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
-import { useNavigate } from "react-router-dom";
 
 function NewsCard({ data }) {
-  const navigate = useNavigate();
   return (
     <div
       // onClick={() => navigate("/read", { state: { ...data } })}
-      className="bg-white text-black relative top-6 z-10"
+      className="bg-white text-black relative top-6"
     >
       <div className="p-2 shadow-md box-border flex w-[60vw] h-[20vw]">
         <img

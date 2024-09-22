@@ -3,7 +3,7 @@ import inshort_footer from "../../assets/Images/logo_footer.png"
 
 function Homefooter() {
   return (
-    <footer className="bg-[#444444] opacity-[87%] py-[4rem] px-[12rem] text-[16px] flex text-white">
+    <footer className="bg-[#444444]  opacity-[87%] py-[4rem] px-[12rem] text-[16px] flex text-white">
       <ul className="flex flex-col gap-4 w-[50%]">
         <a href="">
           <li>Terms & Conditions</li>
