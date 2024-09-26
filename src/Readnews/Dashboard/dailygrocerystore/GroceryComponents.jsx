@@ -1,4 +1,5 @@
 import React from "react";
+import '../dailygrocerystore/Grocerycomponent.css'
 import { GoArrowRight, GoChevronLeft, GoChevronRight } from "react-icons/go";
 import grocery from "../../../assets/Images/logo-no-background.png";
 import groceryPayment from "../../../assets/Images/payment_method.webp";
@@ -14,9 +15,7 @@ function GroceryComponents() {
   return (
     <>
       <section>
-        <div>
-{/* Card */}
-        </div>
+        <div>{/* Card */}</div>
       </section>
       <main className="">
         <div>
@@ -31,11 +30,11 @@ function GroceryComponents() {
         </div>
       </main>
       <nav>Welcome to DailyUseDelivery: Your fresh Grocery Solution</nav>
-      <footer className="bg-[url('./assets/Images/footer-bg.webp')]">
-        <div className="flex">
-          <div>
+      <footer className="bg-[url('./assets/Images/footer-bg.webp')] ">
+        <div className="flex py-[70px] justify-around ">
+          <div className="px-[12px] w-[235px] text-[14px]">
             <a href="">
-              <img src={grocery} alt="" />
+              <img className="h-[56px]" src={grocery} alt="" />
             </a>
             <div>
               Welcome to DailyUseDelivery, Your premier destination for
@@ -44,69 +43,56 @@ function GroceryComponents() {
               possible.
             </div>
           </div>
-          <div>
-            <h2>Quick Links</h2>
-            <ul>
-              <a href="">
-                <GoArrowRight />
+          <div className="bfr relative pl-[70px] ">
+            <h2 className="text-[26px] font-semibold">Quick Links</h2>
+            <ul className="flex flex-col gap-4">
+              <a className="flex text-[17px] font-semibold bgicon" href="">
                 <li>Home</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a className="flex text-[17px] font-semibold bgicon" href="">
                 <li>About</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a className="flex text-[17px] font-semibold bgicon" href="">
                 <li>Contact</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a className="flex text-[17px] font-semibold bgicon" href="">
                 <li>Cart</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a className="flex text-[17px] font-semibold bgicon" href="">
                 <li>Blog</li>
               </a>
             </ul>
           </div>
-          <div>
+          <div className="bfr relative pl-[70px]">
             <h2>Catagories</h2>
-            <ul>
-              <a href="">
-                <GoArrowRight />
+            <ul className="flex flex-col gap-4">
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Vegetables & Fruit</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Atta, Rice & Dal</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Beverages</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Personal Care</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Dairy, Bakery & Eggs</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Cleaning Essentials</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>frozen Foods</li>
               </a>
-              <a href="">
-                <GoArrowRight />
+              <a href="" className="bgicon flex text-[17px] font-semibold">
                 <li>Snacks & Munchies</li>
               </a>
             </ul>
           </div>
-          <div>
+          <div className="bfr relative pl-[70px]">
             <h3>Contact Us</h3>
             <ul>
               <li>Address: 1026, Sector-9, Gurgaon-122001</li>
@@ -131,7 +117,7 @@ function GroceryComponents() {
         </div>
         <div className="flex">
           <div>
-            <FaCopyright /> 
+            <FaCopyright />
             2024 Daily Use Delivery Store. All Rights Reserved.
           </div>
           <span>
