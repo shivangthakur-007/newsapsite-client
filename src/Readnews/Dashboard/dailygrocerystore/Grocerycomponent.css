@@ -22,3 +22,17 @@
   position: absolute;
   left: 3.1rem;
 }
+
+.lipad{
+  padding: 12px 28px; 
+  background-color: #fff;
+  margin: 2px 0;
+  color: #151414;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lipad:hover{
+  background-color: #26901B;
+  color: #fff;
+}

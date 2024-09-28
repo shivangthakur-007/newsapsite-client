@@ -1,6 +1,6 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
-import { FcMenu } from "react-icons/fc";
+import menuBar from "../../../assets/Images/menu_20dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg";
 import { FaEnvelope, FaRupeeSign } from "react-icons/fa";
 import { GoArrowRight, GoChevronDown, GoChevronUp } from "react-icons/go";
 import {
@@ -9,6 +9,7 @@ import {
   FaShoppingBasket,
   FaUser,
 } from "react-icons/fa";
+import "../dailygrocerystore/Grocerycomponent.css";
 import off1 from "../../../assets/Images/off-1.webp";
 import off2 from "../../../assets/Images/off-2.webp";
 import frozenFoods from "../../../assets/Images/menu-14.svg";
@@ -69,93 +70,100 @@ function Grocery() {
           </div>
         </div>
       </main>
-      <section>
-        <div>
-          <div>
-            <span>
-              <FcMenu /> Browser All Categories
-            </span>
-            <span>
-              <GoChevronDown />
-            </span>
+      <section className="py-[15px]">
+        <div className="flex items-center justify-between px-[12px]">
+          <div className="flex justify-between items-center gap-[2rem]">
+            <div className="bg-[#26901B] gap-2 mr-[30px] pt-[12px] pr-[24px] rounded-[12px] pb-[12px] pl-[18px] text-white flex items-center">
+              <span className="flex gap-2 text-[16px] items- font-medium">
+                <img src={menuBar} alt="" sizes={22} />
+                Browser All Categories
+              </span>
+              <GoChevronDown size={20} />
+            </div>
+            <ul className="flex mx-[30px] justify-around gap-8 text-[#555555] font-medium text-[18px]">
+              <a href="">
+                <li>Home</li>
+              </a>
+              <a href="">
+                <li>About</li>
+              </a>
+              <a href="">
+                <li>Contact</li>
+              </a>
+              <a href="">
+                <li>Blog</li>
+              </a>
+              <a href="">
+                <li>Cart</li>
+              </a>
+            </ul>
           </div>
-          <ul>
-            <a href="">
-              <li>Home</li>
-            </a>
-            <a href="">
-              <li>About</li>
-            </a>
-            <a href="">
-              <li>Contact</li>
-            </a>
-            <a href="">
-              <li>Blog</li>
-            </a>
-            <a href="">
-              <li>Cart</li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <div>
-            <FaEnvelope />
-          </div>
-          <div>
-            <span>Email Us</span>
-            <span>dailyUsedelivery@gmail.com</span>
+          <div className="flex items-center gap-3">
+            <div className="text-[#26901B]">
+              <FaEnvelope size={30} />
+            </div>
+            <div className="flex flex-col text-[#191919]">
+              <span className="text-[17px]">Email Us</span>
+              <span className="font-bold text-[18px]">
+                dailyUsedelivery@gmail.com
+              </span>
+            </div>
           </div>
         </div>
       </section>
-      <aside className="bg-[url('./assets/Images/slider-scaled.jpg')]">
-        <div>
-          <ul>
-            <a href="">
-              <li>Vegetables & fruit</li>
-            </a>
-            <a href="">
-              <li>
-                <img src={frozenFoods} alt="" />
-                <span>Frozen foods</span>
-              </li>
-            </a>
-            <a href="">
-              <li>Beverages</li>
-            </a>
-            <a href="">
-              <li>Dairy, Backery & Eggs</li>
-            </a>
-            <a href="">
-              <li>Snacks & Munchies</li>
-            </a>
-            <a href="">
-              <li>Personal Care</li>
-            </a>
-            <a href="">
-              <li>Cleaning Essentials</li>
-            </a>
-            <a href="">
-              <li>Atta, Rice & Dal</li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <div>
-            <div>
-              <span>100% organic Food</span>
-              <h2>100% Fresh Grocery Combo Pack</h2>
-              <p>Sumptuous filling, and temptingly healthy.</p>
-              <h4>From</h4>
-              <span>
-                <FaRupeeSign />
-                50.00
-              </span>
-              <a href="">
-                Shop Now <GoArrowRight />
-              </a>
+      <aside className="px-[12px]">
+        <div className="p-[12px]">
+          <div className="flex items-center bg-[url('./assets/Images/slider-scaled.jpg')] bg-cover">
+            <div className="">
+              <ul className="mr-[26px] flex flex-col mx-[20px] my-[20px]">
+                <a href="">
+                  <li className="lipad">Vegetables & fruit</li>
+                </a>
+                <a href="">
+                  <li className="lipad flex items-center gap-2">
+                    <img src={frozenFoods} className="" alt="" />
+                    <span>Frozen foods</span>
+                  </li>
+                </a>
+                <a href="">
+                  <li className="lipad">Beverages</li>
+                </a>
+                <a href="">
+                  <li className="lipad">Dairy, Backery & Eggs</li>
+                </a>
+                <a href="">
+                  <li className="lipad">Snacks & Munchies</li>
+                </a>
+                <a href="">
+                  <li className="lipad">Personal Care</li>
+                </a>
+                <a href="">
+                  <li className="lipad">Cleaning Essentials</li>
+                </a>
+                <a href="">
+                  <li className="lipad">Atta, Rice & Dal</li>
+                </a>
+              </ul>
+            </div>
+            <div className="pl-[80px]">
+                <div className="flex flex-col w-[70%] ">
+                  <span className="bg-[#EEFFEC] text-[#26901B] px-[22px] py-[6px] text-[16px] rounded-[14px]">
+                    100% organic Food
+                  </span>
+                  <h2 className="fontf text-[#151414] text-[45px] font-semibold">100% Fresh Grocery Combo Pack</h2>
+                  <p className="text-[#151414] text-[16px]">Sumptuous filling, and temptingly healthy.</p>
+                  <div className="flex">
+                  <span>From</span>
+                    <FaRupeeSign />
+                    50.00
+                  </div>
+                  <a href="" className="flex gap-1">
+                    Shop Now <GoArrowRight />
+                  </a>
+                </div>
+              <div></div>
             </div>
           </div>
-          <div></div>
         </div>
       </aside>
       <section>
@@ -223,16 +231,18 @@ function Grocery() {
         </div>
         <div>
           <div>
-          <h2>Fresh Premium Rice Big discount</h2>
-          <div className="">
-            <FaRupeeSign />
-            23.02
-            <span>
+            <h2>Fresh Premium Rice Big discount</h2>
+            <div className="">
               <FaRupeeSign />
-              32.00
-            </span>
-          <div><img src={off2} alt="" /></div>
-          </div>
+              23.02
+              <span>
+                <FaRupeeSign />
+                32.00
+              </span>
+              <div>
+                <img src={off2} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </main>
