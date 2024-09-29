@@ -113,60 +113,66 @@ function Grocery() {
       </section>
       <aside className="px-[12px]">
         <div className="p-[12px]">
-          <div className="flex items-center bg-[url('./assets/Images/slider-scaled.jpg')] bg-cover">
+          <div className="flex rounded-xl items-center bg-[url('./assets/Images/slider-scaled.jpg')] bg-cover">
             <div className="">
-              <ul className="mr-[26px] flex flex-col mx-[20px] my-[20px]">
-                <a href="">
-                  <li className="lipad">Vegetables & fruit</li>
+              <ul className="mr-[26px] mb-[4rem] gap-2 flex flex-col mx-[20px] my-[20px]">
+                <a href="" className="lipad">
+                  <li className="">Vegetables & fruits</li>
                 </a>
-                <a href="">
-                  <li className="lipad flex items-center gap-2">
+                <a href="" className="lipad">
+                  <li className=" flex items-center gap-2">
                     <img src={frozenFoods} className="" alt="" />
                     <span>Frozen foods</span>
                   </li>
                 </a>
-                <a href="">
-                  <li className="lipad">Beverages</li>
+                <a href="" className="lipad">
+                  <li className="">Beverages</li>
                 </a>
-                <a href="">
-                  <li className="lipad">Dairy, Backery & Eggs</li>
+                <a href="" className="lipad">
+                  <li className="">Dairy, Backery & Eggs</li>
                 </a>
-                <a href="">
-                  <li className="lipad">Snacks & Munchies</li>
+                <a href="" className="lipad">
+                  <li className="">Snacks & Munchies</li>
                 </a>
-                <a href="">
-                  <li className="lipad">Personal Care</li>
+                <a href="" className="lipad">
+                  <li className="">Personal Care</li>
                 </a>
-                <a href="">
-                  <li className="lipad">Cleaning Essentials</li>
+                <a href="" className="lipad">
+                  <li className="">Cleaning Essentials</li>
                 </a>
-                <a href="">
-                  <li className="lipad">Atta, Rice & Dal</li>
+                <a href="" className="lipad">
+                  <li className="">Atta, Rice & Dal</li>
                 </a>
               </ul>
             </div>
             <div className="pl-[80px]">
-                <div className="flex flex-col w-[70%] ">
-                  <span className="bg-[#EEFFEC] text-[#26901B] px-[22px] py-[6px] text-[16px] rounded-[14px]">
-                    100% organic Food
-                  </span>
-                  <h2 className="fontf text-[#151414] text-[45px] font-semibold">100% Fresh Grocery Combo Pack</h2>
-                  <p className="text-[#151414] text-[16px]">Sumptuous filling, and temptingly healthy.</p>
-                  <div className="flex">
+              <div className="w-[70%] ">
+                <p className="bg-[#EEFFEC] mb-2 w-[15rem] text-[#26901B] px-[22px] py-[6px] text-[16px] rounded-[14px]">
+                  100% organic Food
+                </p>
+                <h2 className="mb-4 fontf text-[#151414] text-[45px] font-semibold">
+                  100% Fresh Grocery Combo Pack
+                </h2>
+                <p className="mb-4 text-[#151414] text-[16px]">
+                  Sumptuous filling, and temptingly healthy.
+                </p>
+                <div className="flex items-center text-3xl text-[#26901B] gap-2 mb-4">
                   <span>From</span>
-                    <FaRupeeSign />
-                    50.00
-                  </div>
-                  <a href="" className="flex gap-1">
-                    Shop Now <GoArrowRight />
-                  </a>
+                  <span className="underline">₹50.00</span>
                 </div>
+                <a
+                  href=""
+                  className="hover:bg-[#26901B] hover:text-white flex gap-1 items-center rounded-[39px] border-[1.5px] border-[#26901b] text-[#26901B] text-[16px] font-semibold px-5 py-4 w-[9.5rem] justify-around"
+                >
+                  Shop Now <GoArrowRight size="20" />
+                </a>
+              </div>
               <div></div>
             </div>
           </div>
         </div>
       </aside>
-      <section>
+      <section className="mt-[60px]">
         <div>
           <div>
             <span>Popular Products</span>
