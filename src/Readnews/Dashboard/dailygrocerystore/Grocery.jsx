@@ -172,16 +172,18 @@ function Grocery() {
           </div>
         </div>
       </aside>
-      <section className="mt-[60px]">
-        <div>
-          <div>
-            <span>Popular Products</span>
+      <main className="pt-[60px]">
+        <section className="px-[18px] mb-[20px] pb-[8px]">
+          <div className="flex justify-between items-center">
+            <span className="text-[#151414] text-[30px] font-semibold">
+              Popular Products
+            </span>
+            <span className="text-[#26901B] text-[18px] font-medium">
+              Top Rating / Top
+            </span>
           </div>
-          <div>Top Rating / Top</div>
-        </div>
-        <div>{/* <Card /> */}</div>
-      </section>
-      <main>
+          <div>{/* <Card /> */}</div>
+        </section>
         <div>
           <div>
             <h2>Latest Product</h2>
@@ -225,9 +227,9 @@ function Grocery() {
         </div>
         <div>{/* Card */}</div>
       </section>
-      <main className="flex">
-        <div className="">
-          <div>
+      <main className="flex pt-[80px]">
+        <div className="flex items-center bg-[#FDCA41]">
+          <div className="text-[#151414] ">
             <span>Save 30% OFF</span>
             <h2>Fresh Premium Rice Big discount</h2>
           </div>
