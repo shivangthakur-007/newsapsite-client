@@ -37,3 +37,27 @@
   background-color: #26901B;
   color: #fff;
 }
+
+.grainsbg::before{
+  position: absolute;
+  opacity: 0.2;
+  z-index: 1;
+  content: '';
+  width: 194px;
+  height: 194px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 25.5rem;
+}
+.grainsbg2::before{
+  position: absolute;
+  opacity: 0.2;
+  z-index: 0.7;
+  content: '';
+  width: 194px;
+  height: 194px;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 2.5rem;
+  
+}

@@ -227,29 +227,33 @@ function Grocery() {
         </div>
         <div>{/* Card */}</div>
       </section>
-      <main className="flex pt-[80px]">
-        <div className="flex items-center bg-[#FDCA41]">
-          <div className="text-[#151414] ">
-            <span>Save 30% OFF</span>
-            <h2>Fresh Premium Rice Big discount</h2>
-          </div>
-          <div>
-            <img src={off1} alt="" />
+      <main className="flex items-center pt-[80px]">
+        <div className="px-[12px]">
+          <div className="flex items-center grainsbg gap-8 rounded-[20px] bg-[#FDCA41] p-[50px]">
+            <div className="text-[#151414]">
+              <span className="text-[18px] font-semibold">
+                Get Save 30% OFF
+              </span>
+              <h2 className="text-[30px] font-semibold">
+                Fresh premium Rice Big discount
+              </h2>
+            </div>
+            <div>
+              <img src={off1} className="w-[340px]" alt="" />
+            </div>
           </div>
         </div>
-        <div>
-          <div>
-            <h2>Fresh Premium Rice Big discount</h2>
-            <div className="">
-              <FaRupeeSign />
-              23.02
-              <span>
-                <FaRupeeSign />
-                32.00
-              </span>
-              <div>
-                <img src={off2} alt="" />
+        <div className="px-[12px]">
+          <div className="flex items-center grainsbg2 bg-[#6AF2DA] rounded-[20px] py-[42px] px-[50px]">
+            <div className="text-[#151414] ">
+              <h2 className="text-[30px] font-semibold">Fresh Premium Fruits & Vegetables</h2>
+              <div className="mt-[12px] flex items-center gap-2">
+                <span className="text-[18px] font-semibold">₹23.02</span>
+                <s className="text-[18px] text-[#5F6781]">₹32.00</s>
               </div>
+            </div>
+            <div>
+              <img src={off2} className="w-[420px]" alt="" />
             </div>
           </div>
         </div>
