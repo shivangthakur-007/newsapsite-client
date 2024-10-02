@@ -184,46 +184,54 @@ function Grocery() {
           </div>
           <div>{/* <Card /> */}</div>
         </section>
-        <div>
-          <div>
-            <h2>Latest Product</h2>
-            <div>
+        <div className="flex pt-[50px] pb-[80px]">
+          <div className="flex items-center px-[12px] font-semibold">
+            <h2 className="text-[30px] text-[#151414]">Latest Product</h2>
+            <div className="flex">
               <GoChevronDown />
               <GoChevronUp />
             </div>
           </div>
-          <div>
-            <div></div>
+          <div className="flex items-center px-[12px] gap-[8rem]">
+            <div className="text-[30px] text-[#151414] font-semibold">
+              Dairy Best Selling Product
+            </div>
             <div>
-              <ul>
-                <a href="">
-                  <li>Recent</li>
-                  <span>/</span>
-                </a>
-                <a href="">
-                  <li>Best Seller</li>
-                  <span>/</span>
-                </a>
-                <a href="">
-                  <li>Top</li>
-                  <span>/</span>
-                </a>
-                <a href="">
-                  <li>New Arrivals</li>
-                  <span>/</span>
-                </a>
-                <a href="">
-                  <li>Top Rating</li>
-                </a>
+              <ul className="flex">
+                <li className="mr-[30px] relative">
+                  <button className="slashhover text-[18px] text-[#26901B]  font-semibold">
+                    Recent
+                  </button>
+                </li>
+                <li className="mr-[30px] relative">
+                  <button className="slashhover text-[18px] hover:text-[#26901B] text-[#5F6781]  font-semibold">
+                    Best Seller
+                  </button>
+                </li>
+                <li className="mr-[30px] relative">
+                  <button className="slashhover text-[18px] hover:text-[#26901B] text-[#5F6781]  font-semibold">
+                    Top
+                  </button>
+                </li>
+                <li className="mr-[30px] relative">
+                  <button className="slashhover text-[18px] hover:text-[#26901B] text-[#5F6781]  font-semibold">
+                    New Arrivals
+                  </button>
+                </li>
+                <li className="mr-[27px]">
+                  <button className="text-[18px] text-[#5F6781] hover:text-[#26901B]  font-semibold">
+                    Top Rating
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </main>
-      <section>
-        <div>
-          <h3>Deals Of the Day</h3>
-          <a href="">See All</a>
+      <section className="px-[12px] pt-[20px] pb-[40px]">
+        <div className="flex justify-between px-[12px]">
+          <h3 className="text-[30px] font-bold text-[#151414]">Deals Of the Day</h3>
+          <button className="py-[5px] px-[18px] text-[15px] text-[#26901b] bg-[#EEFFEC] rounded-[25px]">See All</button>
         </div>
         <div>{/* Card */}</div>
       </section>
@@ -246,7 +254,9 @@ function Grocery() {
         <div className="px-[12px]">
           <div className="flex items-center grainsbg2 bg-[#6AF2DA] rounded-[20px] py-[42px] px-[50px]">
             <div className="text-[#151414] ">
-              <h2 className="text-[30px] font-semibold">Fresh Premium Fruits & Vegetables</h2>
+              <h2 className="text-[30px] font-semibold">
+                Fresh Premium Fruits & Vegetables
+              </h2>
               <div className="mt-[12px] flex items-center gap-2">
                 <span className="text-[18px] font-semibold">₹23.02</span>
                 <s className="text-[18px] text-[#5F6781]">₹32.00</s>

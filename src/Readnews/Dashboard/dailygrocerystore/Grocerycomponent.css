@@ -8,23 +8,23 @@
   position: absolute;
   left: 15px;
   top: 70px;
-  background: #2a2a2a; 
-  color: #5f6871; 
-  line-height: 29px; 
+  background: #2a2a2a;
+  color: #5f6871;
+  line-height: 29px;
   box-sizing: border-box;
   /* padding: 0px 12px; */
-  content: '';
+  content: "";
 }
 
-.bgicon::before{
+.bgicon::before {
   content: url(../../../assets/Images/rightarrow.svg);
   box-sizing: border-box;
   position: absolute;
   left: 3.1rem;
 }
 
-.lipad{
-  padding: 16px 45px 16px 22.5px; 
+.lipad {
+  padding: 16px 45px 16px 22.5px;
   background-color: #fff;
   /* margin: 2px 0; */
   color: #151414;
@@ -33,31 +33,37 @@
   text-align: start;
 }
 
-.lipad:hover{
-  background-color: #26901B;
+.lipad:hover {
+  background-color: #26901b;
   color: #fff;
 }
 
-.grainsbg::before{
+.grainsbg::before {
   position: absolute;
   opacity: 0.2;
   z-index: 1;
-  content: '';
+  content: "";
   width: 194px;
   height: 194px;
   background-color: #fff;
   border-radius: 50%;
-  left: 25.5rem;
+  left: 27rem;
 }
-.grainsbg2::before{
+.grainsbg2::before {
   position: absolute;
   opacity: 0.2;
   z-index: 0.7;
-  content: '';
+  content: "";
   width: 194px;
   height: 194px;
   background-color: #fff;
   border-radius: 50%;
   right: 2.5rem;
-  
+}
+
+.slashhover::before {
+  position: absolute;
+  content: '/';
+  width: auto;
+  right: -21px;
 }
