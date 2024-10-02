@@ -1,5 +1,5 @@
 import React from "react";
-import '../dailygrocerystore/Grocerycomponent.css'
+import "../dailygrocerystore/Grocerycomponent.css";
 import { GoArrowRight, GoChevronLeft, GoChevronRight } from "react-icons/go";
 import grocery from "../../../assets/Images/logo-no-background.png";
 import groceryPayment from "../../../assets/Images/payment_method.webp";
@@ -17,19 +17,28 @@ function GroceryComponents() {
       <section>
         <div>{/* Card */}</div>
       </section>
-      <main className="">
+      <main className="pb-[60px] pt-[20px]">
+        <div className="px-[12px">
+          <h2 className="text-[30px] text-[#151414] font-semibold">
+            Recent News
+          </h2>
+        </div>
         <div>
+          {/* Card */}
           <div>
             <GoChevronLeft />
             <GoChevronRight />
-            <div>
-              <h2>Recent News</h2>
-            </div>
-            <div>{/* Card */}</div>
+            <div></div>
           </div>
         </div>
       </main>
-      <nav>Welcome to DailyUseDelivery: Your fresh Grocery Solution</nav>
+      <nav className="px-[12px] pt-[15px] pb-[10px] py-[10px]">
+        <button className="px-[4rem] w-[100%]">
+          <span className="text-[#000000] bg-[#b0b0b138] text-start pt-[20px] pr-[30px] pb-[18px] p-[10px] block text-[16px] font-semibold">
+            Welcome to DailyUseDelivery: Your fresh Grocery Solution
+          </span>
+        </button>
+      </nav>
       <footer className="bg-[url('./assets/Images/footer-bg.webp')] ">
         <div className="flex py-[70px] justify-around ">
           <div className="px-[12px] w-[235px] text-[14px]">

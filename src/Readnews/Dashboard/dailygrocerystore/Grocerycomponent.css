@@ -67,3 +67,10 @@
   width: auto;
   right: -21px;
 }
+
+.searchbef::before{
+  content: url(../../../assets/Images/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+  position: absolute;
+  left: 1.1rem;
+  bottom: 0.4rem;
+}

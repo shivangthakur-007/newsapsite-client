@@ -42,15 +42,16 @@ function Grocery() {
           <a href="">
             <img className="max-h-[61px]" src={grocery} alt="" />
           </a>
-          <div className="p-[10px] text-white bg-[#ffffff] flex items-center gap-1">
-            <CiSearch className="" />
-            <input
-              type="search"
-              name=""
-              id=""
-              placeholder="Search For Products..."
-              className="py-[13px] pr-[24px]"
-            />
+          <div className="p-[10px] bg-[#EEEEEE] rounded-3xl pt-[13px] pr-[24px] pb-[13px] pl-[48px] hover:border-2 hover:bg-[#ffffff] relative">
+            <div className="flex items-center searchbef">
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="Search For Products..."
+                className="w-[28rem] outline-0 leading-6 text-[15px ] bg-transparent text-[#7A7A7A]"
+              />
+            </div>
           </div>
           <div>
             <h2>Call Us</h2>
@@ -230,8 +231,12 @@ function Grocery() {
       </main>
       <section className="px-[12px] pt-[20px] pb-[40px]">
         <div className="flex justify-between px-[12px]">
-          <h3 className="text-[30px] font-bold text-[#151414]">Deals Of the Day</h3>
-          <button className="py-[5px] px-[18px] text-[15px] text-[#26901b] bg-[#EEFFEC] rounded-[25px]">See All</button>
+          <h3 className="text-[30px] font-bold text-[#151414]">
+            Deals Of the Day
+          </h3>
+          <button className="py-[5px] px-[18px] text-[15px] text-[#26901b] bg-[#EEFFEC] rounded-[25px]">
+            See All
+          </button>
         </div>
         <div>{/* Card */}</div>
       </section>
