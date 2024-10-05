@@ -15,6 +15,7 @@ import off2 from "../../../assets/Images/off-2.webp";
 import frozenFoods from "../../../assets/Images/menu-14.svg";
 import grocery from "../../../assets/Images/logo-no-background.png";
 import GroceryComponents from "./GroceryComponents";
+import Grocerytemplate from "../Category/Grocerytemplate";
 
 function Grocery() {
   return (
@@ -183,7 +184,9 @@ function Grocery() {
               Top Rating / Top
             </span>
           </div>
-          <div>{/* <Card /> */}</div>
+          <div className="px-[12px]">
+          <Grocerytemplate />
+          </div>
         </section>
         <div className="flex pt-[50px] pb-[80px]">
           <div className="flex items-center px-[12px] font-semibold">
