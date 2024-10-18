@@ -28,7 +28,7 @@ function GroceryHeader() {
       {/* main */}
       <main className="px-[14px]">
         <div className="py-[30px] flex items-center justify-between">
-          <a href="">
+          <a href="/grocery">
             <img className="max-h-[61px]" src={grocery} alt="" />
           </a>
           <div className="p-[10px] bg-[#EEEEEE] rounded-3xl pt-[13px] pr-[24px] pb-[13px] pl-[48px] hover:border-2 hover:bg-[#ffffff] relative">

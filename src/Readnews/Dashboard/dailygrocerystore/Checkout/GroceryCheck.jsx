@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 function GroceryCheck() {
   return (
-    <div>
-      hello
-    </div>
-  )
+    <ul>
+      <a href="">
+        <li>Home</li>
+      </a>
+      <a href="">
+        <li>Checkout</li>
+      </a>
+    </ul>
+  );
 }
 
-export default GroceryCheck
+export default GroceryCheck;
