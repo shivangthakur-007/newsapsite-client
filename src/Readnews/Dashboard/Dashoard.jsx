@@ -44,7 +44,7 @@ function Dashoard() {
             </li>
           </ul>
           <div className="flex flex-col pl-2">
-            <span className="pb-4">CATEGORIES</span>
+            <a href="/read" className="pb-4">CATEGORIES</a>
             <ul className="pl-6 flex flex-col gap-4 font-thin">
               {CategoryItems.map((li) => {
                 return (
