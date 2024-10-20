@@ -16,7 +16,7 @@ function HomeHeader() {
           <Link to="/read" target="_blank">
             <h2 className="hover:text-[#4c94dc] underline">Read Now</h2>
           </Link>
-          <Link to="/blog">
+          <Link to="/blog" target="_blank">
             <h2 className="hover:text-[#4c94dc] underline ">Blog</h2>
           </Link>
         </div>
